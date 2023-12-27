@@ -1,4 +1,12 @@
 const number = new Number(500);
-console.dir(number); // Просмотр объекта Number
-console.dir(Number.prototype.__proto__); // Просмотр прототипа Number
-console.dir(Number.prototype.__proto__.__proto__); // Просмотр прототипа прототипа Number
+const string = new String("Hello");
+const boolean = new Boolean(true);
+
+console.dir(number);
+console.dir(Number.prototype.__proto__);
+
+console.dir(string);
+console.dir(String.prototype.__proto__);
+
+console.dir(boolean);
+console.dir(Boolean.prototype.__proto__);

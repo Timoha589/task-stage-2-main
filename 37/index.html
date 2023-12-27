@@ -15,9 +15,11 @@
             return `Привет ${name}! (function expression)`;
         };
 
-        const arrowFunc1 = (name) => `Привет ${name}! (arrow function - variation 1)`;
+        const arrowFunc1 = (name) => {
+            return `Привет ${name}!`;
+        };
 
-        const arrowFunc2 = name => `Привет ${name}! (arrow function - variation 2)`;
+        const arrowFunc2 = (name) => `Привет ${name}!`;
 
         console.log(funcDeclaration('Alex'));
         console.log(funcExpression('Alex'));

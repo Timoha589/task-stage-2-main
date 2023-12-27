@@ -4,15 +4,18 @@ const middleName = 'Иванович';
 const birthYear = 1990;
 const direction = 'Программирование';
 
-// Конкатенация строк с помощью оператора плюс +
-const result1 =  'Имя: ' + firstName + '\nФамилия: ' + lastName + '\nОтчечтво: ' + middleName + '\nГод рождения: ' + birthYear + '\nНаправление: ' + direction;
+const result1 = 'firstName: ' + firstName + '\n' +
+'lastName: ' + lastName + '\n' +
+'patronymic: ' + middleName + '\n' +
+'yearOfBirth: ' + birthYear + '\n' +
+'profile: ' + direction;
 
-// Конкатенация строк с помощью бэктиков ``
-const result2 = `Имя: ${firstName} \nФамилия: ${lastName} \nОтчество: ${middleName} \nГод рождения: ${birthYear}, \nНаправление: ${direction}`;
-
-// Вывод в консоль
-console.log("Способ 1:");
 console.log(result1);
 
-console.log("\nСпособ 2:");
+const result2 = `firstName: ${firstName}
+lastName: ${lastName}
+patronymic: ${middleName}
+yearOfBirth: ${birthYear}
+profile: ${direction}`;
+
 console.log(result2);

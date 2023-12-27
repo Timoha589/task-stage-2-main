@@ -33,18 +33,24 @@
                 birthday: '2000-10-15',
                 isAdult: true,
             },
-        ]
+        ];
 
+        // Шаг 1: Фильтрация пользователей, где isAdult = true
         const filterList = listUsers.filter(user => user.isAdult);
+
+        // Шаг 2: Преобразование даты в формат DD.MM.YYYY и создание нового массива объектов
         const transformList = filterList.map(user => ({
             ...user,
-            birthday: new Date(user.birthday).toLocaleDateString('en-GB')
+            birthday: new Date(user.birthday).toLocaleDateString('ru-RU')
         }));
+
+        // Шаг 3: Сортировка массива по значению ключа firstName (без изменения исходного массива)
         const sortedList = transformList.slice().sort((a, b) => a.firstName.localeCompare(b.firstName));
 
+        // Вывод результатов в консоль для проверки
         console.log(filterList);
         console.log(transformList);
         console.log(sortedList);
-    </script>
+        </script>
 </body>
 </html>

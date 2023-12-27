@@ -17,7 +17,8 @@
             },
 
             info() {
-                const split = function () {
+                // Изменение на стрелочную функцию для сохранения контекста
+                const split = () => {
                     return `
                         Name: ${this.firstName}
                         Age: ${this.age}

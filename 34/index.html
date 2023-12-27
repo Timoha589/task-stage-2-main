@@ -10,24 +10,21 @@
         const object1 = {
             name: 'Student1',
             money: 100,
-        }
+        };
 
         const object2 = {
             name: 'Student2',
             money: 200,
-        }
+        };
 
         const object3 = {
             name: 'Student3',
             money: 300,
-        }
+        };
 
-        const divider = () => ' | '
+        const formatObject = (obj) => `У студента ${obj.name} в кошельке: ${obj.money} рублей`;
 
-        const result = `У студента ${object1.name} в кошельке:${object1.money} рублей` + divider() +
-                       `У студента ${object2.name} в кошельке:${object2.money} рублей` + divider() +
-                       `У студента ${object3.name} в кошельке:${object3.money} рублей`;
-
+        const result = `${formatObject(object1)} | ${formatObject(object2)} | ${formatObject(object3)}`;
         console.log(result);
     </script>
 </body>
